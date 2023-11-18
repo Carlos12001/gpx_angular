@@ -20,18 +20,18 @@ export class MapService {
   }
 
   plotActivity(id: number) {
-    var myStyle = {
-      color: '#3949AB',
-      weight: 5,
-      opacity: 0.95,
-    };
+    // var myStyle = {
+    //   color: '#3949AB',
+    //   weight: 3,
+    //   opacity: 0.95,
+    // };
 
     var map = L.map('map').setView(defaultCoords, defaultZoom);
 
     map.maxZoom = 100;
 
     L.tileLayer(
-      'https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+      'https://api.mapbox.com/styles/v1/EJEMPLO1234/clp3y534c00zt01pe7kox24vy/tiles/256/{z}/{x}/{y}@2x?access_token=EJEMPLO2134',
       {
         attribution:
           'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -42,7 +42,7 @@ export class MapService {
     ).addTo(map);
 
     var customLayer = L.geoJson(null, {
-      style: myStyle,
+      style: 'mapbox://styles/mapbox/streets-v12',
     });
 
     const activity = SAVED_ACTIVITIES.slice(0).find((run) => run.id == id);

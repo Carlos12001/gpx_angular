@@ -31,3 +31,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```bash
 npm install leaflet-omnivore leaflet mapbox boostrap
 ```
+
+# Obtener link API MapBox
+
+<https://studio.mapbox.com/>
+
+## Obtener el MapBox Api Key
+
+<https://youtu.be/b6Oh4ZBKf6o?si=ainbUx53O109bJFe>
+
+## Video de explicacion del Codigo
+
+<https://youtu.be/EHdSb279Lzg?si=IpaHriFS2eCty0QP>
